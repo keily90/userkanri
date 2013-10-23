@@ -6,6 +6,7 @@ gem 'rails', '4.0.0'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
@@ -26,6 +27,19 @@ gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
+
+# Use MYSQL2 as the database for Active Record
+gem 'mysql2'
+
+
+# Use bcrypt-ruby as the database for password security
+gem 'bcrypt-ruby', '3.0.1'
+
+gem "koala", "~> 1.7.0rc1"
+
+gem "facebook-login", "~> 0.3.0"
+
+gem 'anjlab-bootstrap-rails', '~> 3.0.0.3', :require => 'bootstrap-rails'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
