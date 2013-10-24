@@ -35,11 +35,13 @@ gem 'mysql2'
 # Use bcrypt-ruby as the database for password security
 gem 'bcrypt-ruby', '3.0.1'
 
-gem "koala", "~> 1.7.0rc1"
+gem 'devise', '3.0.0.rc'
 
-gem "facebook-login", "~> 0.3.0"
+gem 'annotate', '2.4.0'
 
-gem 'anjlab-bootstrap-rails', '~> 3.0.0.3', :require => 'bootstrap-rails'
+gem 'protected_attributes'
+
+gem 'bootstrap-sass', '~> 3.0.0.0.rc'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
