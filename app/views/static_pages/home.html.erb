@@ -1,0 +1,22 @@
+<h1>All product</h1>
+
+<ul class="users">
+  <% @product.each do |product| %>
+    <li>
+      
+      <%= link_to product.name, product_path(product) %>
+      <form action="shopping" method="post">
+       <div class="field" style="width:20px;">
+         <input type="hidden" name="product_id" value="<%=  product.id %>">
+         Number: <input type="number" name="number">
+       </div>
+       <%#*<div class="btn btn-danger">%>
+         <%#= link_to "Shopping", product_path(product)%>
+       <%#*</div>%>
+        <input type="submit" value="Shopping" class="btn btn-danger">
+      </form>
+      <br/><br/>
+    </li>
+  <% end %>
+   <%= will_paginate @product %>
+</ul>

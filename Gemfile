@@ -41,12 +41,19 @@ gem 'annotate', '2.4.0'
 
 gem 'protected_attributes'
 
-gem 'bootstrap-sass', '~> 3.0.0.0.rc'
+
+gem 'bootstrap-sass', '2.3.2.0'
+
+gem 'will_paginate', '~> 3.0'
+
+
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
+
+gem 'pry'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

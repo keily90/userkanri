@@ -1,9 +1,7 @@
-
-
-<h1>Sign up</h1>
+<h1>Edit user</h1>
 
 <%= form_for(@user) do |f| %>
-<%= render 'layouts/error_message.html' %>
+  <%= render 'layouts/error_message.html' %>
   <div class="field">
     <%= f.label :name %><br />
     <%= f.text_field :name %>
@@ -16,15 +14,7 @@
     <%= f.label :phone %><br />
     <%= f.text_field :phone %>
   </div>
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password %>
-  </div>
-  <div class="field">
-    <%= f.label :password_confirmation, "Confirmation" %><br />
-    <%= f.password_field :password_confirmation %>
-  </div>
   <div class="actions">
-    <%= f.submit "Sign up" %>
+    <%= f.submit "Update" %>
   </div>
 <% end %>
